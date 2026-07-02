@@ -30,6 +30,7 @@ const Footer = () => {
                 });
                 navigate("/");
               }}
+              draggable={false}
               className="h-40 cursor-pointer items-center"
             />
           </div>

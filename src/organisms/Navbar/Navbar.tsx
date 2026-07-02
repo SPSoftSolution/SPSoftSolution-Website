@@ -51,6 +51,7 @@ const Navbar = () => {
                 });
                 navigate("/", { replace: true });
               }}
+              draggable={false}
               className="h-12 cursor-pointer items-center"
             />
             {/* </div> */}
