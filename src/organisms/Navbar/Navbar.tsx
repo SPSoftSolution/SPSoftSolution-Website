@@ -41,9 +41,9 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <img
-              src={logo}
-              alt="SP Soft Solution"
+            <button
+              type="button"
+              aria-label="Go to SP Soft Solution home page"
               onClick={() => {
                 window.scrollTo({
                   top: 0,
@@ -51,15 +51,22 @@ const Navbar = () => {
                 });
                 navigate("/", { replace: true });
               }}
-              draggable={false}
-              className="h-12 cursor-pointer items-center"
-            />
+              className="cursor-pointer"
+            >
+              <img
+                src={logo}
+                alt="SP Soft Solution"
+                draggable={false}
+                className="h-12 items-center"
+              />
+            </button>
             {/* </div> */}
 
             {/* Desktop Menu */}
             <nav className="hidden lg:flex items-center gap-10 text-lg">
               {navLinks.map((item) => (
-                <span
+                <button
+                  type="button"
                   key={item.path}
                   onClick={() => {
                     window.scrollTo({
@@ -83,7 +90,7 @@ const Navbar = () => {
                         : "w-0 group-hover:w-full"
                     }`}
                   />
-                </span>
+                </button>
               ))}
             </nav>
 
@@ -100,6 +107,12 @@ const Navbar = () => {
 
             {/* Mobile Menu Button */}
             <button
+              type="button"
+              aria-label={
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+              }
+              aria-expanded={isOpen}
+              aria-controls="mobile-navigation"
               onClick={() => setIsOpen(!isOpen)}
               className="relative w-8 h-8 p-4 flex flex-col items-center justify-center md:hidden "
             >
@@ -141,11 +154,13 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -40 }}
             transition={{ duration: 0.3 }}
+            id="mobile-navigation"
             className={`fixed top-20 left-0 w-full bg-secondaryColor z-40 shadow-xl lg:hidden p-4 pb-8 rounded-b-2xl`}
           >
             <div className="flex flex-col justify-center gap-4 ">
               {navLinks.map((item) => (
-                <span
+                <button
+                  type="button"
                   key={item.path}
                   onClick={() => {
                     window.scrollTo({
@@ -162,7 +177,7 @@ const Navbar = () => {
                   }`}
                 >
                   {item.name}
-                </span>
+                </button>
               ))}
             </div>
           </motion.div>

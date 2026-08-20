@@ -12,14 +12,14 @@ const WhyChooseUs = () => {
           Why Choose Us?
         </h2>
 
-        <h4 className="max-w-2xl text-xl text-center">
+        <p className="max-w-2xl text-xl text-center">
           We combine creativity, technology and business understanding to build
           software solutions that are{" "}
           <span className="font-bold italic">
             fast, secure, scalable and tailored
           </span>{" "}
           to your unique requirements.
-        </h4>
+        </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {WHY_CHOOSE_US_FEATURES.map((feature) => (
             <FeatureCard heading={feature.heading} detail={feature.detail} />

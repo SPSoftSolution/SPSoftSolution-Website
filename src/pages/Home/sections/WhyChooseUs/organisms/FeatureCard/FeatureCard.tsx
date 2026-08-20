@@ -22,8 +22,8 @@ const FeatureCard = ({ heading, detail }: FeatureCardProps) => {
         transformOrigin: "center",
       }}
     >
-      <h2 className="text-2xl text-primaryColor font-medium">{heading}</h2>
-      <h4>{detail}</h4>
+      <h3 className="text-2xl text-primaryColor font-medium">{heading}</h3>
+      <p>{detail}</p>
     </motion.div>
   );
 };

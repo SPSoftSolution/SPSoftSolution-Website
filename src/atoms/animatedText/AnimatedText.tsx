@@ -32,6 +32,7 @@ const char: Variants = {
 
 interface AnimatedTextProps {
   sentence: string;
+  as?: "div" | "h1";
   className?: string;
   containerClassName?: string;
   wrapperClassName?: string;
@@ -46,9 +47,12 @@ const AnimatedText = ({
   wrapperClassName = "",
   sentence,
   wordByWordAnimation = false,
+  as = "div",
 }: AnimatedTextProps) => {
+  const AnimatedTag = as === "h1" ? motion.h1 : motion.div;
+
   return (
-    <motion.div
+    <AnimatedTag
       variants={container}
       initial="hidden"
       animate={canStartAnimation ? "show" : "hidden"}
@@ -82,7 +86,7 @@ const AnimatedText = ({
               ))}
             </span>
           ))}
-    </motion.div>
+    </AnimatedTag>
   );
 };
 

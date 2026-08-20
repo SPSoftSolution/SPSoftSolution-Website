@@ -12,6 +12,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto flex flex-col gap-16 justify-center ">
         <div className="flex flex-col items-center text-center py-16 gap-4 py-8">
           <AnimatedText
+            as="h1"
             className="text-4xl font-bold text-primaryColor font-heading"
             wrapperClassName="mr-2"
             sentence="Who We Are?"

@@ -17,15 +17,16 @@ const OurExpertise = () => {
           Our Expertise
         </h2>
 
-        <h4 className="max-w-2xl text-xl text-center">
+        <p className="max-w-2xl text-xl text-center">
           Building Digital Solutions That Scale
-        </h4>
+        </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 pt-16">
           {EXPERTISES.map((expertiseDetail, index) => {
             const Icon = expertiseDetail.icon;
             return (
               <div
+                key={expertiseDetail.label}
                 className={
                   index % 2
                     ? "skew-y-[0deg] md:-skew-y-[6deg] lg:skew-y-[6deg]"
@@ -41,7 +42,7 @@ const OurExpertise = () => {
                   transition={{ duration: 0.3, delay: 0.3 * index }}
                 >
                   <Icon className="w-12 h-12" />
-                  <span className="text-lg">{expertiseDetail.label}</span>
+                  <h3 className="text-lg">{expertiseDetail.label}</h3>
                 </motion.div>
               </div>
             );

@@ -66,7 +66,7 @@ const Contact = () => {
         subject: "",
         message: "",
       });
-    } catch (error) {
+    } catch {
       setFormSubmitError(true);
     } finally {
       setLoading(false);
@@ -78,6 +78,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto flex flex-col justify-center items-center">
         <div className="text-center pt-16">
           <AnimatedText
+            as="h1"
             className="text-4xl font-bold text-primaryColor font-heading text-center"
             wrapperClassName="mr-2"
             sentence="Let's Build Something Great"

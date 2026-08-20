@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 // Components
 import AnimatedText from "../../../../atoms/animatedText";
 
 // Images
 import heroBg from "../../../../assets/images/background.png";
+import { PrimaryButton } from "../../../../atoms/Buttons";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section
       id="home"
@@ -14,7 +17,7 @@ const Hero = () => {
     >
       {/* Bg Img */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat "
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-1]"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
 
@@ -32,6 +35,7 @@ const Hero = () => {
           </div>
 
           <AnimatedText
+            as="h1"
             sentence="Custom Software Solutions Built Around Your Requirement"
             className="text-4xl lg:text-5xl font-heading font-medium leading-tight text-primaryColor"
             wrapperClassName="mr-3"
@@ -42,6 +46,19 @@ const Hero = () => {
             className="font-inter mt-1 -text-lg text-ternaryColor max-w-xl"
             wordByWordAnimation
           />
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.8, duration: 0.5 }}
+            className="relative z-20 mt-6"
+          >
+            <PrimaryButton
+              onClick={() => navigate("/contact", { replace: true })}
+            >
+              Talk to Our Experts
+            </PrimaryButton>
+          </motion.div>
         </motion.div>
 
         {/* Right */}

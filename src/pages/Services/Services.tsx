@@ -10,6 +10,7 @@ const Services = () => {
     <section className="py-24 px-6 w-full bg-white">
       <div className="max-w-7xl mx-auto flex flex-col justify-center items-center">
         <AnimatedText
+          as="h1"
           className="text-4xl font-bold text-primaryColor font-heading"
           wrapperClassName="mr-2"
           sentence="Our Services"
