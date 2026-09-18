@@ -2,6 +2,8 @@
 
 > SP Soft Solution builds websites, web applications, mobile apps, and custom software for growing businesses.
 
+> The team includes frontend developers, backend developers, and full-stack developers with experience in React, Redux, HTML, CSS, Tailwind CSS, SQL, and PostgreSQL.
+
 ## Website
 
 - [Home](https://www.spsoftsolution.com/): Company overview and software development expertise.
@@ -12,3 +14,7 @@
 ## Company Summary
 
 SP Soft Solution is a software development company that creates reliable, scalable digital solutions tailored to business needs. The company combines modern technology, strategic thinking, and practical delivery to help businesses grow.
+
+## Technical Expertise
+
+Frontend development, backend development, full-stack development, React, Redux, HTML, CSS, Tailwind CSS, SQL and PostgreSQL.

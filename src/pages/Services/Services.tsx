@@ -17,8 +17,9 @@ const Services = () => {
         />
 
         <p className="mt-4 max-w-2xl text-lg text-center">
-          Provide end-to-end software development services that help businesses
-          establish a strong digital presence and streamline daily operations.
+          SP Soft Solution provides end-to-end software development services,
+          including website development, web application development, mobile app
+          development and custom software development.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 mt-16">

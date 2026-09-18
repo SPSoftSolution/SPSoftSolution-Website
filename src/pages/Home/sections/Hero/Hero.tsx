@@ -42,7 +42,7 @@ const Hero = () => {
           />
 
           <AnimatedText
-            sentence="We help businesses accelerate growth through modern websites, web applications, mobile application and custom software tailored to their unique operational needs. From concept to deployment, we transform ideas into reliable digital solutions."
+            sentence="We help businesses accelerate growth through website development, web application development, mobile app development and custom software tailored to their unique operational needs. From concept to deployment, we transform ideas into reliable digital solutions."
             className="font-inter mt-1 -text-lg text-ternaryColor max-w-xl"
             wordByWordAnimation
           />
