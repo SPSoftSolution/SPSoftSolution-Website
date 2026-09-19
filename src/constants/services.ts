@@ -67,9 +67,9 @@ export const SERVICES = [
     ],
   },
   {
-    title: "Website Maintenance & Support",
+    title: "Website, Web App & Mobile App Maintenance",
     description:
-      "Ongoing maintenance, updates, and support to keep your website secure and reliable.",
+      "Ongoing maintenance, updates, and support to keep your website, web application and mobile app secure, reliable, and up to date.",
     icon: FaTools,
     featureList: [
       "Security Updates",
@@ -77,6 +77,7 @@ export const SERVICES = [
       "Regular Backups",
       "Content Updates",
       "Performance Monitoring",
+      "Mobile App Updates",
     ],
   },
   {
